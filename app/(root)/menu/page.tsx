@@ -46,9 +46,9 @@ const Menu = () => {
                         </section>
                         <section id='uramaki' className='my-12 w-full h-auto'>
                             <div className='w-full flex justify-center gap-4 items-center mb-6'>
-                                <Image src="/assets/menu/grid.png" alt='grid' width={1000} height={1000} className='h-auto w-16' />
-                                <h1 className='text-4xl'>URAMAKI</h1>
-                                <Image src="/assets/menu/grid.png" alt='grid' width={1000} height={1000} className='h-auto w-16 rotate-180' />
+                                <Image src="/assets/menu/Grid.png" alt='grid' width={1000} height={1000} className='h-auto w-16' />
+                                <h1 className='text-4xl'>MAKI</h1>
+                                <Image src="/assets/menu/Grid.png" alt='grid' width={1000} height={1000} className='h-auto w-16 rotate-180' />
                             </div>
                             <div className='w-full flex flex-col justify-start items-start gap-2'>
                                 {menu.filter(menu => menu.type === "URAMAKI").map(menu => (
@@ -67,9 +67,9 @@ const Menu = () => {
                         </section>
                         <section id='special-rolls' className='my-12 w-full h-auto'>
                             <div className='w-full flex justify-center gap-4 items-center mb-6'>
-                                <Image src="/assets/menu/grid.png" alt='grid' width={1000} height={1000} className='h-auto w-16' />
-                                <h1 className='text-4xl'>SPECIAL ROLLS</h1>
-                                <Image src="/assets/menu/grid.png" alt='grid' width={1000} height={1000} className='h-auto w-16 rotate-180' />
+                                <Image src="/assets/menu/Grid.png" alt='grid' width={1000} height={1000} className='h-auto w-16' />
+                                <h1 className='text-4xl'>MAKI</h1>
+                                <Image src="/assets/menu/Grid.png" alt='grid' width={1000} height={1000} className='h-auto w-16 rotate-180' />
                             </div>
                             <div className='w-full flex flex-col justify-start items-start gap-2'>
                                 {menu.filter(menu => menu.type === "SPECIAL ROLLS").map(menu => (
