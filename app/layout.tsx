@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Forum } from "next/font/google";
 import "./globals.css";
+import { MusicProvider } from "@/context/MusicContext";
 
 const forum = Forum({
   subsets: ['latin'],
@@ -19,7 +20,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={forum.className}>{children}</body>
+      <body className={forum.className}>
+        <MusicProvider>
+          {children}
+        </MusicProvider>
+      </body>
     </html>
   );
 }

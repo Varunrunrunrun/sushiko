@@ -1,6 +1,6 @@
 "use client";
 import React from 'react'
-import { MenuIcon } from "lucide-react";
+import { MenuIcon, Volume2, VolumeX } from "lucide-react";
 import {
     Sheet,
     SheetContent,
@@ -8,12 +8,14 @@ import {
     SheetTrigger,
 } from "@/components/ui/sheet"
 import { useRouter } from 'next/navigation';
+import { useMusic } from '@/context/MusicContext';
 const NavBar = () => {
     const router = useRouter();
 
     const navigateFn = (link: string) => {
         router.push(link);
     }
+    const { isMuted, toggleMute } = useMusic();
     return (
         <div className="sm:w-auto w-full  px-4 py-2 bg-primaryCol rounded flex sm:justify-center justify-between items-center gap-2">
 
@@ -28,6 +30,15 @@ const NavBar = () => {
                         <div className="text-4xl md:text-7xl cursor-pointer  delay-100 transition hover:opacity-75 hover:scale-[1.05]" onClick={() => { navigateFn('/about') }}>ABOUT</div>
                         <div className="text-4xl md:text-7xl cursor-pointer  delay-100 transition hover:opacity-75 hover:scale-[1.05]" onClick={() => { navigateFn('/contact') }}>CONTACT</div>
                         <div className="text-4xl md:text-7xl cursor-pointer  delay-100 transition hover:opacity-75 hover:scale-[1.05]" onClick={() => { navigateFn('/blog') }}>BLOG</div>
+
+                        <button onClick={toggleMute}>
+                            {!isMuted ?
+                                <>
+                                    <span className='flex items-center gap-2 text-sm'><p>Mute</p> <VolumeX className='w-4' /></span>
+                                </> : <>
+                                    <span className='flex items-center gap-2 text-sm'><p>Unmute</p> <Volume2 className='w-4' /></span></>
+                            }
+                        </button>
                     </SheetDescription>
                 </SheetContent>
             </Sheet>
