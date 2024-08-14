@@ -18,9 +18,9 @@ const Reservation = () => {
             <div className='lg:w-1/2 w-full h-screen p-4'>
                 <div className='w-full h-full border-[1px] rounded-lg border-secondaryCol/50 relative p-4 pt-20'>
                     <div className='w-full flex justify-center gap-4 items-center mb-6'>
-                        <Image src="/assets/menu/grid.png" alt='grid' width={1000} height={1000} className='h-auto w-16' />
+                        <Image src="/assets/menu/Grid.png" alt='grid' width={1000} height={1000} className='h-auto w-16' />
                         <h1 className='text-3xl sm:text-4xl'>RESERVATION</h1>
-                        <Image src="/assets/menu/grid.png" alt='grid' width={1000} height={1000} className='h-auto w-16 rotate-180' />
+                        <Image src="/assets/menu/Grid.png" alt='grid' width={1000} height={1000} className='h-auto w-16 rotate-180' />
                     </div>
                 </div>
             </div>
