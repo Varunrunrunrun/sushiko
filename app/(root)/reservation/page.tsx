@@ -4,15 +4,18 @@ import React from 'react'
 
 const Reservation = () => {
     return (
-        <main className='w-full h-screen bg-primaryCol text-secondaryCol flex lg:flex-row flex-col gap-4 sm:p-4 p-0'>
-            <div className='lg:h-full h-auto lg:w-1/2 w-full rounded-[20px] bg-reservation-hero bg-center bg-no-repeat flex flex-col justify-between items-start sm:p-8 p-4 gap-6'>
-                <NavBar />
-                <div className="text-5xl md:text-7xl lg:text-9xl w-full h-auto">
-                    <div>BOOK</div>
-                    <div>A TABLE</div>
+        <main className='w-full min-h-screen bg-primaryCol text-secondaryCol flex lg:flex-row flex-col gap-4'>
+            <div className='lg:h-screen h-auto lg:w-1/2 w-full   sm:p-4 p-0  '>
+                <div className='w-full h-full sm:rounded-[20px] p-4 bg-reservation-hero bg-center flex flex-col justify-between items-start gap-6'>
+                    <NavBar />
+                    <div className="text-5xl md:text-7xl lg:text-9xl w-full h-auto">
+                        <div>BOK</div>
+                        <div>A TABLE</div>
+                    </div>
                 </div>
+
             </div>
-            <div className='lg:w-1/2 w-full h-full'>
+            <div className='lg:w-1/2 w-full h-screen p-4'>
                 <div className='w-full h-full border-[1px] rounded-lg border-secondaryCol/50 relative p-4 pt-20'>
                     <div className='w-full flex justify-center gap-4 items-center mb-6'>
                         <Image src="/assets/menu/grid.png" alt='grid' width={1000} height={1000} className='h-auto w-16' />

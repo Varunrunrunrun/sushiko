@@ -5,16 +5,19 @@ import React from 'react'
 
 const Menu = () => {
     return (
-        <main className='w-full h-screen bg-primaryCol text-secondaryCol flex lg:flex-row flex-col gap-4 sm:p-4 p-0'>
-            <div className='lg:h-full h-auto lg:w-1/2 w-full rounded-[20px] bg-menu-hero bg-center flex flex-col justify-between items-start sm:p-8 p-4 gap-6'>
-                <NavBar />
-                <div className="text-5xl md:text-7xl lg:text-9xl w-full h-auto">
-                    MENU
+        <main className='w-full min-h-screen bg-primaryCol text-secondaryCol flex lg:flex-row flex-col gap-4'>
+            <div className='lg:h-screen h-auto lg:w-1/2 w-full   sm:p-4 p-0  '>
+                <div className='w-full h-full sm:rounded-[20px] p-4 bg-menu-hero bg-center flex flex-col justify-between items-start gap-6'>
+                    <NavBar />
+                    <div className="text-5xl md:text-7xl lg:text-9xl w-full h-auto">
+                        MENU
+                    </div>
                 </div>
+
             </div>
-            <div className='lg:w-1/2 w-full h-full'>
+            <div className='lg:w-1/2 w-full h-screen p-4'>
                 <div className='w-full h-full border-[1px] rounded-lg border-secondaryCol/50 relative p-4 pt-20'>
-                    <div className='w-full h-auto px-4 py-2 flex justify-center items-center gap-4 absolute top-8 '>
+                    <div className='w-[96%] h-auto px-4 py-2 flex justify-center items-center gap-4 absolute top-8 '>
                         <a href='#maki' className="font-sans text-xs px-2 py-1 font-light cursor-pointer border-[0.5px] border-secondaryCol/50 rounded-sm ">MAKI</a>
                         <a href='#uramaki' className="font-sans text-xs px-2 py-1 font-light cursor-pointer border-[0.5px] border-secondaryCol/50 rounded-sm ">URAMAKI</a>
                         <a href="#special-rolls" className="font-sans text-xs px-2 py-1 font-light cursor-pointer border-[0.5px] border-secondaryCol/50 rounded-sm ">SPECIAL ROLLS</a>
@@ -49,7 +52,7 @@ const Menu = () => {
                             </div>
                             <div className='w-full flex flex-col justify-start items-start gap-2'>
                                 {menu.filter(menu => menu.type === "URAMAKI").map(menu => (
-                                    <div key={menu.id} className='w-full flex justify-start items-start h-auto my-4 px-2 gap-4'>
+                                    <div key={menu.id} className='w-full flex md:flex-row flex-col justify-start md:items-start items-center h-auto my-4 px-2 gap-4'>
                                         <Image src={menu.image} width={1000} height={1000} className='w-[150px] h=[100px] rounded-md' alt='dish' />
                                         <div className='w-full'>
                                             <div className='w-full flex justify-between items-center'>
@@ -70,7 +73,7 @@ const Menu = () => {
                             </div>
                             <div className='w-full flex flex-col justify-start items-start gap-2'>
                                 {menu.filter(menu => menu.type === "SPECIAL ROLLS").map(menu => (
-                                    <div key={menu.id} className='w-full flex justify-start items-start h-auto my-4 px-2 gap-4'>
+                                    <div key={menu.id} className='w-full flex md:flex-row flex-col justify-start md:items-start items-center h-auto my-4 px-2 gap-4'>
                                         <Image src={menu.image} width={1000} height={1000} className='w-[150px] h=[100px] rounded-md' alt='dish' />
                                         <div className='w-full'>
                                             <div className='w-full flex justify-between items-center'>
