@@ -69,10 +69,15 @@ const config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        titleAnim: {
+          '0%': { transform: 'translateX(100px)', opacity: "0" },
+          '100%': { transform: 'translateY(0)', opacity: "100" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "titleAnim": 'titleAnim 1s ease-in-out',
       },
       backgroundImage: {
         'landing-hero': "url('/assets/landing-page/landing-hero.png')",

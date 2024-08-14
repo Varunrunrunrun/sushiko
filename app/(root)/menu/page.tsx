@@ -5,11 +5,11 @@ import React from 'react'
 
 const Menu = () => {
     return (
-        <main className='w-full min-h-screen bg-primaryCol text-secondaryCol flex lg:flex-row flex-col gap-4'>
+        <main className='lg:remove-scrllbar w-full min-h-screen bg-primaryCol text-secondaryCol flex lg:flex-row flex-col gap-4'>
             <div className='lg:h-screen h-auto lg:w-1/2 w-full   sm:p-4 p-0  '>
                 <div className='w-full h-full sm:rounded-[20px] p-4 bg-menu-hero bg-center flex flex-col justify-between items-start gap-6'>
                     <NavBar />
-                    <div className="text-5xl md:text-7xl lg:text-9xl w-full h-auto">
+                    <div className="text-5xl md:text-7xl lg:text-9xl w-full h-auto animate-titleAnim">
                         MENU
                     </div>
                 </div>
@@ -47,7 +47,7 @@ const Menu = () => {
                         <section id='uramaki' className='my-12 w-full h-auto'>
                             <div className='w-full flex justify-center gap-4 items-center mb-6'>
                                 <Image src="/assets/menu/Grid.png" alt='grid' width={1000} height={1000} className='h-auto w-16' />
-                                <h1 className='text-4xl'>MAKI</h1>
+                                <h1 className='text-4xl'>URAMAKI</h1>
                                 <Image src="/assets/menu/Grid.png" alt='grid' width={1000} height={1000} className='h-auto w-16 rotate-180' />
                             </div>
                             <div className='w-full flex flex-col justify-start items-start gap-2'>
@@ -68,7 +68,7 @@ const Menu = () => {
                         <section id='special-rolls' className='my-12 w-full h-auto'>
                             <div className='w-full flex justify-center gap-4 items-center mb-6'>
                                 <Image src="/assets/menu/Grid.png" alt='grid' width={1000} height={1000} className='h-auto w-16' />
-                                <h1 className='text-4xl'>MAKI</h1>
+                                <h1 className='text-4xl'>SPECIAL ROLLS</h1>
                                 <Image src="/assets/menu/Grid.png" alt='grid' width={1000} height={1000} className='h-auto w-16 rotate-180' />
                             </div>
                             <div className='w-full flex flex-col justify-start items-start gap-2'>

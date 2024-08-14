@@ -13,7 +13,7 @@ export default function Home() {
             <MenuCard className="cursor-pointer w-full h-full rounded-[12px] relative bg-landing-card-2 bg-black bg-top bg-no-repeat bg-cover  text-base" buttonText="RESERVATION" />
             <MenuCard className="cursor-pointer w-full h-full rounded-[12px] relative bg-landing-card-3 bg-black bg-center bg-no-repeat bg-cover  text-base" buttonText="OUR RESTAURANT" />
           </div>
-          <div className="text-5xl md:text-7xl lg:text-9xl w-full h-auto">
+          <div className="text-5xl md:text-7xl lg:text-9xl w-full h-auto animate-titleAnim">
             <div>SUSHI</div>
             <div>SENSTATION</div>
           </div>
