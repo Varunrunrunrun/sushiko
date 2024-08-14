@@ -9,7 +9,7 @@ const Reservation = () => {
                 <div className='w-full h-full sm:rounded-[20px] p-4 bg-reservation-hero bg-center flex flex-col justify-between items-start gap-6'>
                     <NavBar />
                     <div className="text-5xl md:text-7xl lg:text-9xl w-full h-auto">
-                        <div>BOK</div>
+                        <div>BOOK</div>
                         <div>A TABLE</div>
                     </div>
                 </div>
@@ -19,7 +19,7 @@ const Reservation = () => {
                 <div className='w-full h-full border-[1px] rounded-lg border-secondaryCol/50 relative p-4 pt-20'>
                     <div className='w-full flex justify-center gap-4 items-center mb-6'>
                         <Image src="/assets/menu/grid.png" alt='grid' width={1000} height={1000} className='h-auto w-16' />
-                        <h1 className='text-4xl'>RESERVATION</h1>
+                        <h1 className='text-3xl sm:text-4xl'>RESERVATION</h1>
                         <Image src="/assets/menu/grid.png" alt='grid' width={1000} height={1000} className='h-auto w-16 rotate-180' />
                     </div>
                 </div>
