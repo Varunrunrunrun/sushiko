@@ -96,3 +96,37 @@ html {
   background-color: #efe7d2;
   border-radius: 6px;
 }
+
+@keyframes moveFaviconMd {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(170px); /* Adjust based on favicon size */
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveFavicon {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(100px); /* Adjust based on favicon size */
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.favicon {
+  width: 16px; /* Adjust based on favicon size */
+  height: 16px; /* Adjust based on favicon size */
+  animation: moveFaviconMd 3s linear infinite;
+
+  @media only screen and (max-width: 768px) {
+    animation: moveFavicon 3s linear infinite;
+  }
+}

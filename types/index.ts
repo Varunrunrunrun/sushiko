@@ -14,3 +14,19 @@ export interface MusicContextProps {
 export interface MusicProviderProps {
     children: ReactNode;
 }
+
+export interface menuItemProps {
+    name?: string;
+    description?: string;
+    image?: string;
+    price?: string;
+    type?: string;
+}
+
+export interface blogProps {
+    title?: string;
+    description?: string;
+    image?: string;
+    date?: any;
+    content?: string;
+}

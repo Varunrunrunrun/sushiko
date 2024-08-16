@@ -71,13 +71,27 @@ const config = {
         },
         titleAnim: {
           '0%': { transform: 'translateX(100px)', opacity: "0" },
+          '100%': { transform: 'translateX(0)', opacity: "100" },
+        },
+        menuNameAnim: {
+          '0%': { transform: 'translateY(10px)', opacity: "0" },
           '100%': { transform: 'translateY(0)', opacity: "100" },
+        },
+        moveFavicon: {
+          '0%': { transform: 'translateX(0)' },
+          // '25%': { transform: 'translateX(calc(100px))' },
+          '50%': { transform: 'translateX(calc(100px))' },
+          // '75%': { transform: 'translateX(calc(-100px))' },
+          '100%': { transform: 'translateX(0)' },
         },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "titleAnim": 'titleAnim 1s ease-in-out',
+        "menuNameAnim": 'menuNameAnim 1s ease-in-out',
+        "moveFavicon": 'moveFavicon 1s ease-in-out',
+
       },
       backgroundImage: {
         'landing-hero': "url('/assets/landing-page/landing-hero.png')",
@@ -86,6 +100,7 @@ const config = {
         'landing-card-3': "url('/assets/landing-page/landing-card-3.png')",
         'menu-hero': "url('/assets/menu/menu-hero.png')",
         'reservation-hero': "url('/assets/reservation/reservation-hero.png')",
+        'loader': "url('/loader.jpg')",
 
       }
     },

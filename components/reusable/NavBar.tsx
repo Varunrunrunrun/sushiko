@@ -25,11 +25,11 @@ const NavBar = () => {
                 </SheetTrigger>
                 <SheetContent side="left" className="bg-primaryCol p-8 w-3/4 border-2 border-l-0 border-secondaryCol rounded-r-lg outline-none">
                     <SheetDescription className="h-full m-auto w-auto flex flex-col justify-center items-center text-secondaryCol gap-4">
-                        <div className="text-4xl md:text-7xl cursor-pointer  delay-100 transition hover:opacity-75 hover:scale-[1.05]" onClick={() => { navigateFn('/menu') }}>MENU</div>
-                        <div className="text-4xl md:text-7xl cursor-pointer  delay-100 transition hover:opacity-75 hover:scale-[1.05]" onClick={() => { navigateFn('/reservation') }}>RESERVATIONS</div>
-                        <div className="text-4xl md:text-7xl cursor-pointer  delay-100 transition hover:opacity-75 hover:scale-[1.05]" onClick={() => { navigateFn('/about') }}>ABOUT</div>
-                        <div className="text-4xl md:text-7xl cursor-pointer  delay-100 transition hover:opacity-75 hover:scale-[1.05]" onClick={() => { navigateFn('/contact') }}>CONTACT</div>
-                        <div className="text-4xl md:text-7xl cursor-pointer  delay-100 transition hover:opacity-75 hover:scale-[1.05]" onClick={() => { navigateFn('/blog') }}>BLOG</div>
+                        <p className="text-4xl md:text-7xl cursor-pointer  delay-100 transition hover:opacity-75 hover:scale-[1.05]" onClick={() => { navigateFn('/menu') }}>MENU</p>
+                        <p className="text-4xl md:text-7xl cursor-pointer  delay-100 transition hover:opacity-75 hover:scale-[1.05]" onClick={() => { navigateFn('/reservation') }}>RESERVATIONS</p>
+                        <p className="text-4xl md:text-7xl cursor-pointer  delay-100 transition hover:opacity-75 hover:scale-[1.05]" onClick={() => { navigateFn('/about') }}>ABOUT</p>
+                        <p className="text-4xl md:text-7xl cursor-pointer  delay-100 transition hover:opacity-75 hover:scale-[1.05]" onClick={() => { navigateFn('/contact') }}>CONTACT</p>
+                        <p className="text-4xl md:text-7xl cursor-pointer  delay-100 transition hover:opacity-75 hover:scale-[1.05]" onClick={() => { navigateFn('/blog') }}>BLOG</p>
 
                         <button onClick={toggleMute}>
                             {!isMuted ?
