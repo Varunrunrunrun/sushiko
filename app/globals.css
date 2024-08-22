@@ -81,6 +81,8 @@ html {
 /* For WebKit Browsers */
 ::-webkit-scrollbar {
   width: 8px;
+  height: 8px;
+  outline: none !important;
 }
 
 ::-webkit-scrollbar-track {
@@ -129,4 +131,18 @@ html {
   @media only screen and (max-width: 768px) {
     animation: moveFavicon 3s linear infinite;
   }
+}
+
+.map-css {
+  filter: grayscale(100%) invert(92%) contrast(83%);
+  outline: none !important;
+  border: none !important;
+
+  @media only screen and (max-width: 768px) {
+    min-height: 360px;
+  }
+}
+.map-css:active {
+  outline: none !important;
+  border: none !important;
 }

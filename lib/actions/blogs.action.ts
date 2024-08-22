@@ -11,3 +11,20 @@ export const getBlogData = async () => {
         return [];
     }
 };
+
+export const getBlogDataById = async (id: any) => {
+    const DATABASE_ID = process.env.DATABASE_ID;
+    const BLOGS_ID = process.env.BLOGS_ID;
+
+    if (!DATABASE_ID || !BLOGS_ID) {
+        throw new Error("Environment variables DATABASE_ID or BLOGS_ID are not defined");
+    }
+
+    try {
+        const response = await databases.getDocument(DATABASE_ID, BLOGS_ID, id);
+        return response;
+    } catch (error) {
+        console.error('Error fetching data from Appwrite:', error);
+        return null;
+    }
+};

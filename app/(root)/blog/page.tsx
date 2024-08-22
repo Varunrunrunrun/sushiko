@@ -6,9 +6,10 @@ import { getBlogData } from '@/lib/actions/blogs.action';
 import { blogProps } from '@/types';
 import moment from 'moment';
 import Image from 'next/image'
+import { useRouter } from 'next/navigation';
 import React, { useEffect, useState } from 'react'
 
-const Blog = () => {
+const BlogFull = () => {
     const [blog, setBlog] = useState<blogProps[]>([]);
     const [loader, setLoader] = useState(true);
     useEffect(() => {
@@ -21,7 +22,12 @@ const Blog = () => {
             setBlog(blogData);
         }
         getBlog();
-    }, [])
+    }, []);
+
+    const router = useRouter();
+    const navigateFn = (id: string) => {
+        router.push(`/blog/${id}`);
+    }
     return (
         <>
             {
@@ -53,12 +59,12 @@ const Blog = () => {
                                     <section id='maki' className='mb-12 w-full h-auto'>
                                         <div className='w-full flex flex-col justify-start items-start gap-2'>
                                             {
-                                                blog.length > 0 && blog.map(blog => (
-                                                    <div key={blog.title} className='w-full h-auto flex lg:flex-row flex-col justify-start gap-4 items-start cursor-pointer'>
+                                                blog.map(blog => (
+                                                    <div key={blog.title} className='w-full h-auto flex lg:flex-row flex-col justify-start gap-4 items-start cursor-pointer' onClick={() => { navigateFn(blog.$id) }}>
                                                         <img src={blog.image} alt='blog' className='md:w-[210px] h-[160px] rounded-lg' />
                                                         <div className='flex-1 flex flex-col justify-start gap-2 items-start'>
-                                                            <h1 className=' uppercase font-sans text-sm'>{moment(blog.date).format("Do MMM YYYY")}</h1>
-                                                            <h1 className='text-xl uppercase'>{blog.title}</h1>
+                                                            <h1 className=' uppercase font-sans text-sm'>{moment(blog.date).format("Do MMM YYYY")} </h1>
+                                                            <h1 className='text-xl uppercase'>{blog.title} </h1>
                                                             <h1 className='text-sm font-sans'>{blog.description}</h1>
                                                         </div>
                                                     </div>
@@ -76,4 +82,4 @@ const Blog = () => {
     )
 }
 
-export default Blog
+export default BlogFull;

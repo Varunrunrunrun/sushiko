@@ -128,3 +128,42 @@ export const menu = [
         "price": "₹460"
     }
 ]
+
+export const reviews = [
+    {
+        id: 0,
+        name: "Trip Advisor",
+        review: "An authentic sushi experience that leaves you craving for more.",
+        rating: 4,
+    },
+    {
+        id: 1,
+        name: "Michelin Guide",
+        review: "Exceptional sushi with meticulous attention to detail, a true culinary masterpiece.",
+        rating: 5,
+    },
+    {
+        id: 2,
+        name: "Star Dining",
+        review: "Delightfully fresh and beautifully presented sushi in a warm, inviting atmosphere.",
+        rating: 4,
+    },
+];
+
+export const roboUrl = "https://www.google.com/maps/place/Robosoft+Technologies/@13.3792546,74.7377198,17z/data=!3m1!4b1!4m6!3m5!1s0x3bbcbcd3ffffffff:0xaa6468a5ada29205!8m2!3d13.3792546!4d74.7402947!16s%2Fg%2F1tl_k4q0?entry=ttu";
+
+export const openingHours = [
+    { day: "Sunday", timing: "10:00-22:00" },
+    { day: "Monday", timing: "10:00-22:00" },
+    { day: "Tuesday", timing: "10:00-22:00" },
+    { day: "Wednesday", timing: "Closed" },
+    { day: "Thursday", timing: "10:00-22:00" },
+    { day: "Friday", timing: "10:00-23:00" },
+    { day: "Saturday", timing: "10:00-23:00" }
+];
+
+export const restaurantDetails = [
+    { key: "Address", value: "Sushiko,123 Sakura Street,Shinjuku District,Tokyo, 160-0022, Japan." },
+    { key: "Mobile Number", value: "+91 8073319391" },
+    { key: "Email", value: "eat@sushiko.com" },
+]

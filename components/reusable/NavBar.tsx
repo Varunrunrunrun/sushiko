@@ -42,7 +42,7 @@ const NavBar = () => {
                     </SheetDescription>
                 </SheetContent>
             </Sheet>
-            <div className="text-2xl" onClick={() => { navigateFn('/') }}>SUSHIKO</div>
+            <div className="text-2xl cursor-pointer" onClick={() => { navigateFn('/') }}>SUSHIKO</div>
             <div className="font-sans text-xs px-2 py-1 font-light cursor-pointer" onClick={() => { navigateFn('/menu') }}>MENU</div>
             <div className="font-sans text-xs px-2 py-1 font-light cursor-pointer" onClick={() => { navigateFn('/about') }}>ABOUT</div>
             <div className="font-sans text-xs px-2 py-1 font-light cursor-pointer border-[1px] rounded-sm hidden sm:block" onClick={() => { navigateFn('/reservation') }}>BOOK A TABLE</div>

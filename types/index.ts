@@ -29,4 +29,5 @@ export interface blogProps {
     image?: string;
     date?: any;
     content?: string;
+    $id?: any;
 }

@@ -84,6 +84,14 @@ const config = {
           // '75%': { transform: 'translateX(calc(-100px))' },
           '100%': { transform: 'translateX(0)' },
         },
+        aboutSlide1: {
+          '0%': { transform: 'translateX(-300px)', opacity: "0" },
+          '100%': { transform: 'translateX(0)', opacity: "100" },
+        },
+        aboutSlide2: {
+          '0%': { transform: 'translateX(300px)', opacity: "0" },
+          '100%': { transform: 'translateX(0)', opacity: "100" },
+        }
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -91,7 +99,8 @@ const config = {
         "titleAnim": 'titleAnim 1s ease-in-out',
         "menuNameAnim": 'menuNameAnim 1s ease-in-out',
         "moveFavicon": 'moveFavicon 1s ease-in-out',
-
+        "aboutSlide1": "aboutSlide1 1s ease-in-out",
+        "aboutSlide2": "aboutSlide2 1s ease-in-out",
       },
       backgroundImage: {
         'landing-hero': "url('/assets/landing-page/landing-hero.png')",
@@ -101,7 +110,8 @@ const config = {
         'menu-hero': "url('/assets/menu/menu-hero.png')",
         'reservation-hero': "url('/assets/reservation/reservation-hero.png')",
         'loader': "url('/loader.jpg')",
-
+        'about-hero': "url('/assets/about/bg-about.png')",
+        'contact-hero': "url('/assets/contact/contact-hero.png')",
       }
     },
   },
